@@ -1,0 +1,99 @@
+Himanshu Kumar
+i
+
+imhimanshuvashist@gmail.com | +919297781320
+Linkedin | GitHub | Portfolio
+
+EDUCATION
+
+EXPERIENCE
+
+Heritage Institute of Technology
+
+INNOMATICS RESEARCH LABS
+
+Btech in Information Technology
+2022-2026| CGPA: 7.6
+
+Krishnanand Memorial Academy
+
+Full Stack Development Intern
+Sep 2024 – Present | Remote
+
+Senior Secondary School
+
+PROJECTS
+
+2019-2021 | Asarganj, India | 80%
+
+E-Alumni
+
+LINKS
+LinkedIn://vashist-himanshu
+Github:// Himanshu-vashist
+Portfolio:// Portfolio
+SKILLS
+Frontend :
+•React
+•HTML
+•CSS
+•Bootstrap • Javascript
+Backend :
+•Nodejs•Express
+•Mongodb
+Languages :
+•C •Java •OOPs
+•DBMS •SQL
+Other :
+•Excel•Word•Office
+•ComputerNetworks
+•OperatingSystem
+
+SOFT SKILLS :
+•ManagementandLeadership
+•CriticalThinking
+•TeamManagement
+
+Full-Stack Development: Built an E-Alumni platform leveraging Node.js,
+Express.js, MongoDB, React, JavaScript, CSS, Bootstrap, and HTML.
+Feature Implementation: Integrated secure authentication, alumni profiles,
+real-time chat (audio, video, and screen sharing), post creation, user
+feedback, donation portal, and helpbot functionalities; used robust
+authorization protocols and Cloudinary for image management.
+Demo: Check it out.
+
+Wanderlust
+Full-Stack Development: Created a travel platform using Node.js, Express.js,
+MongoDB, JavaScript, CSS, Bootstrap, HTML, and Cloudinary to enable
+users to explore, plan, and share travel experiences.
+Core Features: Implemented seamless signup, secure login, robust
+authorization, and server-side validation for a smooth user experience;
+integrated Mongoose for effective database management.
+Hosting & Scalability: Deployed on Render.com to ensure reliable
+performance and scalable infrastructure.
+Demo: Check it out.
+
+MessageMate
+Real-Time Chat Development: Built MessageMate, a chat application with
+Node.js, Express.js, MongoDB, and Socket.io, enabling real-time
+communication.
+Key Features: Implemented secure authentication, one-on-one and group
+chats, message notifications, emoji support, and image sharing, with robust
+encryption for data privacy.
+Demo: Check it out.
+
+CERTIFICATIONS
+2024
+2024
+2024
+
+Udemy Mastering React: React Course
+Scaler Node JS Course - Master the Fundamentals
+Infosys Web Development with Node.JS MongoDB
+
+Volunteer Experience
+Member Rotaract Club of Heritage Institute of Technology
+Member Entrepreneurship Development Cell of Heritage
+Institute of Technology Kolkata
+
+
