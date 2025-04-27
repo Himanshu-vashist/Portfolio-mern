@@ -30,8 +30,9 @@ const Home = () => {
                 options={{
                   strings: [
                     "FullStack Developer!",
-                    "Mern Stack Developer!",
-                    "React developer!",
+                    "MERN Stack Developer!",
+                    "React Developer!",
+                    "Open Source Enthusiast!",
                   ],
                   autoStart: true,
                   loop: true,
@@ -49,7 +50,7 @@ const Home = () => {
               >
                 Hire Me
               </a>
-              <a className="btn btn-cv" href="https://drive.google.com/file/d/1-RNzqC0q3SNVkqyM24pIqC_QOzP-prfO/view?usp=sharing" download="your_name.pdf">
+              <a className="btn btn-cv" href="https://drive.google.com/file/d/1-RNzqC0q3SNVkqyM24pIqC_QOzP-prfO/view?usp=sharing" download="Himanshu_Kumar_Resume.pdf">
                 My Resume
               </a>
             </div>

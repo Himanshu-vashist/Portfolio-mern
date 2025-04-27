@@ -16,12 +16,17 @@ const About = () => {
             <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-content">
               <h1>About me</h1>
               <p>
-                              I’m Himanshu Kumar, a Full Stack Developer (MERN Stack), Open Source Enthusiast, and Passionate Web Developer. As an Information Technology student at Heritage Institute of Technology, Kolkata, I’m driven by a deep passion to solve real-world challenges.
+                I'm <strong>Himanshu Kumar</strong>, a versatile <strong>Full Stack Developer</strong> specializing in both web and mobile application development. As an Information Technology student at Heritage Institute of Technology, Kolkata, I combine technical expertise with creative problem-solving to build innovative digital solutions.
 
-                💻 My core expertise lies in building scalable, high-performance web applications using the MERN stack (MongoDB, Express.js, React, Node.js). With a strong foundation in full-stack development, I enjoy crafting intuitive, dynamic user experiences and robust backend systems. I am constantly learning and growing, pushing the boundaries of my skills with a “get-it-done” mindset.
+                💻 My technical toolkit spans the <strong>MERN stack</strong> (MongoDB, Express.js, React, Node.js) for web development and <strong>React Native with Expo</strong> for cross-platform mobile applications. I've developed a diverse portfolio of projects including educational gaming platforms, agricultural support applications, and e-commerce solutions.
 
-                🌟 I'm an active contributor to the open-source community and passionate about creating impactful digital solutions. I love collaborating with others and sharing knowledge through my projects and contributions.
+                🚀 At <strong>Jabsz Gaming Studios LLP</strong>, I've honed my skills in mobile development, working with technologies like Firebase, Google Authentication, and AdMob integration. My experience includes building responsive interfaces, implementing secure authentication systems, and creating monetization strategies.
 
+                🌱 I'm passionate about creating technology that makes a real difference in people's lives. Whether it's helping farmers with digital tools or making education more engaging through interactive games, I strive to develop applications that solve meaningful problems.
+
+                🔍 I approach each project with meticulous attention to detail, a commitment to clean code, and a focus on creating intuitive user experiences. I'm constantly expanding my skillset, currently exploring TypeScript, cloud services, and advanced state management techniques.
+
+                🤝 I thrive in collaborative environments and enjoy working with cross-functional teams to bring ideas to life. I'm always open to new challenges and opportunities to create impactful digital experiences.
               </p>
             </div>
           </div>

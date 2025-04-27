@@ -1,0 +1,58 @@
+/* Global styles for consistent margins and spacing */
+
+/* Content wrapper with sidebar margin */
+.content-wrapper {
+  margin-left: 90px; /* Default sidebar width */
+  transition: all 0.3s ease;
+  width: calc(100% - 90px);
+}
+
+/* When sidebar is expanded */
+.sidebar-toggle ~ .content-wrapper {
+  margin-left: 200px; /* Expanded sidebar width */
+  width: calc(100% - 200px);
+}
+
+.page-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Section spacing */
+.about,
+.education,
+.techstack,
+.project-section,
+.work,
+.certifications-container,
+.contact {
+  margin-bottom: 60px;
+}
+
+/* Card and container styles */
+.card,
+.certificate-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

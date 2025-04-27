@@ -104,6 +104,18 @@ const Menus = ({ toggle }) => {
                 </div>
                 <div className="nav-link">
                   <Link
+                    to="achievements"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={100}
+                  >
+                    <FcPortraitMode />
+                    Achievements
+                  </Link>
+                </div>
+                <div className="nav-link">
+                  <Link
                     to="contact"
                     spy={true}
                     smooth={true}
@@ -188,6 +200,17 @@ const Menus = ({ toggle }) => {
                   duration={100}
                 >
                   <FcPortraitMode />
+                </Link>
+              </div>
+              <div className="nav-link">
+                <Link
+                  to="achievements"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcBusinessContact />
                 </Link>
               </div>
               <div className="nav-link">

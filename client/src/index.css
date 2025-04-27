@@ -8,8 +8,10 @@
 /* DARK MODE */
 
 #dark {
-  background-color: #5f264a;
-  color: #f4eee0;
+  background-color: #0f172a;
+  color: #f5f5f5;
+  background-image: radial-gradient(rgba(59, 143, 243, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
 }
 
 /* ======================= */

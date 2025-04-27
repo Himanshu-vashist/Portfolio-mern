@@ -1,13 +1,16 @@
 .sidebar-section {
   display: flex;
-  background-color: black;
+  background-color: #000000;
 }
 
 .sidebar {
   height: 100vh;
-  background-color: #1e1e2c;
+  background-color: #1a1a2e;
   width: 90px;
   position: fixed;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 100;
 }
 .sidebar-toggle {
   width: 200px;
@@ -19,14 +22,37 @@
   cursor: pointer;
 }
 .sidebar-toggle-icons p svg {
-  background-color: #f29f67;
+  background-color: #3b8ff3;
   color: white;
   margin-top: 10px;
+  border-radius: 50%;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-toggle-icons p svg:hover {
+  transform: rotate(180deg);
+  background-color: #2a7de0;
+}
+
+.main-content {
+  width: 100%;
+  margin-left: 90px; /* Same as sidebar width */
+  transition: all 0.3s ease;
+}
+
+/* When sidebar is toggled to be wider */
+.sidebar-toggle-active {
+  margin-left: 200px; /* Same as sidebar-toggle width */
 }
 
 /* ==== MOBILE VIEW ========== */
 @media (max-width: 600px) {
   .sidebar {
     display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
   }
 }

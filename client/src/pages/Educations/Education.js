@@ -24,9 +24,11 @@ const Education = () => {
             icon={<MdSchool />}
           >
             <h3 className="vertical-timeline-element-title"> B.Tech</h3>
+
             <h4 className="vertical-timeline-element-subtitle">
               Heritage Institute Of Technology Kolkata
             </h4>
+            <h5 className="vertical-timeline-element-title"> CGPA: 7.6</h5>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -36,27 +38,29 @@ const Education = () => {
             iconStyle={{ background: "#138781", color: "#fff" }}
             icon={<MdSchool />}
           >
-            <h3 className="vertical-timeline-element-title">12</h3>
+            <h3 className="vertical-timeline-element-title">Higher Secondary Education</h3>
             <h4 className="vertical-timeline-element-subtitle">
-              KM Academy Asarganj
+            Krishnanand Memorial Academy , Asharganj
             </h4>
+            <h5 className="vertical-timeline-element-title"> Percentage: 82% </h5>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "white", color: "black" }}
             contentArrowStyle={{ borderRight: "7px solid  white" }}
-            date="2018 - 2019"
+            date="2011 - 2019"
             iconStyle={{ background: "#138781", color: "#fff" }}
             icon={<MdSchool />}
           >
-            <h3 className="vertical-timeline-element-title">10</h3>
+            <h3 className="vertical-timeline-element-title">Senior Secondary Education</h3>
             <h4 className="vertical-timeline-element-subtitle">
-              DAV PUBLIC SCHOOL KHARAGPUR
+            DAV Public School, H.Kharagpur
             </h4>
+            <h5 className="vertical-timeline-element-title"> Percentage: 92% </h5>
           </VerticalTimelineElement>
-        
+
         </VerticalTimeline>
-        
+
       </div>
     </>
   );
