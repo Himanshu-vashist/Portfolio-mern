@@ -50,7 +50,7 @@ const Home = () => {
               >
                 Hire Me
               </a>
-              <a className="btn btn-cv" href="https://drive.google.com/file/d/1-RNzqC0q3SNVkqyM24pIqC_QOzP-prfO/view?usp=sharing" download="Himanshu_Kumar_Resume.pdf">
+              <a className="btn btn-cv" href="https://drive.google.com/file/d/1mBxF3JwZmeTLP3E7Sg9wcE9JnKXS3xbW/view?usp=sharing" download="Himanshu_Kumar_Resume.pdf">
                 My Resume
               </a>
             </div>
