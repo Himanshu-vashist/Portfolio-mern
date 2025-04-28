@@ -32,15 +32,15 @@ const Certifications = () => {
       description: "Winner at Techno Main Saltlake organized IIC Hackathon, demonstrating exceptional problem-solving skills and technical expertise.",
       icon: <FaTrophy className="achievement-icon trophy" />,
       date: "2025",
-      imgSrc: "achievement1.png" // Add your image path here
+      imgSrc: "achievement1.jpg" // Add your image path here
     },
     {
       id: 2,
-      title: "Rotaract Club Member",
+      title: "Enterpreneur Development Club Member",
       description: "Actively participated in community service initiatives and events, enhancing leadership and organizational skills.",
       icon: <FaUsers className="achievement-icon community" />,
       date: "2023 - Present",
-      imgSrc: "achievement2.jpg" // Add your image path here
+      imgSrc: "edc.jpg" // Add your image path here
     },
     {
       id: 3,
@@ -48,7 +48,7 @@ const Certifications = () => {
       description: "Led the development team that designed an Alumni Association platform for the University, showcasing project management and technical leadership.",
       icon: <FaCode className="achievement-icon hackathon" />,
       date: "2024",
-      imgSrc: "achievement3.jpg" // Add your image path here
+      imgSrc: "E-Alumni.png" // Add your image path here
     },
     {
       id: 4,
@@ -56,7 +56,7 @@ const Certifications = () => {
       description: "Led the team to a top 10 finish in Innovathon at BIT Sindri, showcasing leadership and technical expertise.",
       icon: <FaAward className="achievement-icon award" />,
       date: "2024",
-      imgSrc: "achievement4.jpg" // Add your image path here
+      imgSrc: "BIT.jpg" // Add your image path here
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ const Certifications = () => {
       description: "Actively contributed to the college basketball team, fostering teamwork and discipline alongside technical pursuits.",
       icon: <FaBasketballBall className="achievement-icon sports" />,
       date: "2022 - Present",
-      imgSrc: "achievement5.jpg" // Add your image path here
+      imgSrc: "basktball.jpg" // Add your image path here
     }
   ];
 
@@ -91,15 +91,20 @@ const Certifications = () => {
                   <p className="achievement-date">{achievement.date}</p>
                   <p className="achievement-description">{achievement.description}</p>
 
-                  {/* Image container - uncomment when you have images */}
+                  {/* Image container */}
                   <div className="achievement-image-container">
-                    {/* <img
-                      src={achievement.imgSrc}
+                    <img
+                      src={process.env.PUBLIC_URL + '/' + achievement.imgSrc}
                       alt={achievement.title}
                       className="achievement-image"
-                    /> */}
-                    <div className="achievement-image-placeholder">
-                      Add your achievement image here
+                      onError={(e) => {
+                        console.error(`Failed to load image: ${achievement.imgSrc}`);
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="achievement-image-placeholder" style={{display: 'none'}}>
+                      Image not available
                     </div>
                   </div>
                 </div>
@@ -116,9 +121,13 @@ const Certifications = () => {
             {certificates.map((certificate) => (
               <div key={certificate.id} className="certificate-card">
                 <img
-                  src={certificate.imgSrc}
+                  src={process.env.PUBLIC_URL + '/' + certificate.imgSrc}
                   alt={certificate.title}
                   className="certificate-image"
+                  onError={(e) => {
+                    console.error(`Failed to load certificate image: ${certificate.imgSrc}`);
+                    e.target.src = process.env.PUBLIC_URL + '/logo512.png';
+                  }}
                 />
                 <h2 className="certificate-title">{certificate.title}</h2>
                 <p className="certificate-description">{certificate.description}</p>

@@ -117,16 +117,43 @@
 
 import React, { useState } from "react";
 import "./Projects.css";
+import { FaInfoCircle, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
+  // State variables for each project modal
   const [showFarmerModal, setShowFarmerModal] = useState(false);
   const [showKnowledgeModal, setShowKnowledgeModal] = useState(false);
+  const [showEcommerceModal, setShowEcommerceModal] = useState(false);
+  const [showEAlumniModal, setShowEAlumniModal] = useState(false);
+  const [showWanderlustModal, setShowWanderlustModal] = useState(false);
+  const [showTodoModal, setShowTodoModal] = useState(false);
+  const [showStudentModal, setShowStudentModal] = useState(false);
+  const [showEducationModal, setShowEducationModal] = useState(false);
 
+  // Handler functions for each modal
   const handleCloseFarmerModal = () => setShowFarmerModal(false);
   const handleShowFarmerModal = () => setShowFarmerModal(true);
 
   const handleCloseKnowledgeModal = () => setShowKnowledgeModal(false);
   const handleShowKnowledgeModal = () => setShowKnowledgeModal(true);
+
+  const handleCloseEcommerceModal = () => setShowEcommerceModal(false);
+  const handleShowEcommerceModal = () => setShowEcommerceModal(true);
+
+  const handleCloseEAlumniModal = () => setShowEAlumniModal(false);
+  const handleShowEAlumniModal = () => setShowEAlumniModal(true);
+
+  const handleCloseWanderlustModal = () => setShowWanderlustModal(false);
+  const handleShowWanderlustModal = () => setShowWanderlustModal(true);
+
+  const handleCloseTodoModal = () => setShowTodoModal(false);
+  const handleShowTodoModal = () => setShowTodoModal(true);
+
+  const handleCloseStudentModal = () => setShowStudentModal(false);
+  const handleShowStudentModal = () => setShowStudentModal(true);
+
+  const handleCloseEducationModal = () => setShowEducationModal(false);
+  const handleShowEducationModal = () => setShowEducationModal(true);
 
   return (
     <>
@@ -292,6 +319,160 @@ const Projects = () => {
           </div>
         )}
 
+        {/* E-commerce Project Modal */}
+        {showEcommerceModal && (
+          <div className="custom-modal-overlay" onClick={handleCloseEcommerceModal}>
+            <div className="custom-modal" onClick={(e) => e.stopPropagation()}>
+              <div className="custom-modal-header">
+                <h3 className="custom-modal-title">🛒 E-commerce Application</h3>
+                <button className="custom-modal-close" onClick={handleCloseEcommerceModal}>×</button>
+              </div>
+              <div className="custom-modal-body">
+                <p style={{ color: "#666" }}>Jan 2025 - Mar 2025</p>
+                <p>
+                  Developed a full-featured e-commerce platform using the MERN stack (MongoDB, Express, React, Node.js),
+                  providing users with a seamless shopping experience from product discovery to checkout.
+                </p>
+
+                <h5 style={{ marginTop: "1.5rem", color: "#3b8ff3" }}>Key Features:</h5>
+                <ul>
+                  <li>
+                    <strong>🔍 Advanced Product Search:</strong> Implemented filters, sorting, and search functionality to help users
+                    find products quickly and efficiently
+                  </li>
+                  <li>
+                    <strong>🛒 Shopping Cart System:</strong> Created a robust cart system with real-time updates, quantity adjustments,
+                    and persistent storage
+                  </li>
+                  <li>
+                    <strong>💳 Secure Payment Integration:</strong> Integrated Stripe payment gateway for secure and seamless
+                    transaction processing
+                  </li>
+                  <li>
+                    <strong>👤 User Authentication:</strong> Implemented JWT-based authentication with role-based access control
+                    for customers and administrators
+                  </li>
+                  <li>
+                    <strong>📊 Admin Dashboard:</strong> Developed a comprehensive admin panel for inventory management, order
+                    processing, and sales analytics
+                  </li>
+                </ul>
+
+                <h5 style={{ marginTop: "1.5rem", color: "#3b8ff3" }}>Technical Implementation:</h5>
+                <ul>
+                  <li>
+                    <strong>⚛️ Frontend:</strong> Built with React.js, Redux for state management, and styled with CSS and Bootstrap
+                  </li>
+                  <li>
+                    <strong>🖥️ Backend:</strong> Developed RESTful API using Node.js and Express.js
+                  </li>
+                  <li>
+                    <strong>🗄️ Database:</strong> Utilized MongoDB for flexible data storage and Mongoose for object modeling
+                  </li>
+                  <li>
+                    <strong>🔒 Security:</strong> Implemented input validation, data sanitization, and protection against common
+                    web vulnerabilities
+                  </li>
+                  <li>
+                    <strong>📱 Responsive Design:</strong> Ensured optimal user experience across all device sizes with responsive design principles
+                  </li>
+                </ul>
+
+                <h5 style={{ marginTop: "1.5rem", color: "#3b8ff3" }}>Deployment:</h5>
+                <ul>
+                  <li>
+                    <strong>🚀 Hosting:</strong> Deployed the application on Render for reliable and scalable hosting
+                  </li>
+                  <li>
+                    <strong>🔄 CI/CD:</strong> Set up continuous integration and deployment pipeline for streamlined updates
+                  </li>
+                  <li>
+                    <strong>📊 Performance:</strong> Optimized loading times and resource usage for better user experience
+                  </li>
+                </ul>
+              </div>
+              <div className="custom-modal-footer">
+                <button className="custom-modal-btn custom-modal-btn-primary" onClick={handleCloseEcommerceModal}>
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* E-Alumni Project Modal */}
+        {showEAlumniModal && (
+          <div className="custom-modal-overlay" onClick={handleCloseEAlumniModal}>
+            <div className="custom-modal" onClick={(e) => e.stopPropagation()}>
+              <div className="custom-modal-header">
+                <h3 className="custom-modal-title">🎓 E-Alumni: Alumni Management Platform</h3>
+                <button className="custom-modal-close" onClick={handleCloseEAlumniModal}>×</button>
+              </div>
+              <div className="custom-modal-body">
+                <p style={{ color: "#666" }}>Dec 2024 - Feb 2025</p>
+                <p>
+                  Developed a comprehensive alumni management platform that connects graduates with their alma mater and fellow alumni,
+                  facilitating networking, mentorship, and continued engagement with the institution.
+                </p>
+
+                <h5 style={{ marginTop: "1.5rem", color: "#3b8ff3" }}>Key Features:</h5>
+                <ul>
+                  <li>
+                    <strong>👥 Alumni Directory:</strong> Created a searchable directory of alumni with filtering options by graduation year,
+                    field of study, location, and industry
+                  </li>
+                  <li>
+                    <strong>🗓️ Event Management:</strong> Implemented a system for organizing and promoting alumni events, reunions,
+                    and networking opportunities
+                  </li>
+                  <li>
+                    <strong>💼 Job Board:</strong> Developed a job posting and application system where alumni can share career
+                    opportunities with fellow graduates
+                  </li>
+                  <li>
+                    <strong>🔒 Secure Authentication:</strong> Implemented a robust authentication system with email verification
+                    and profile management
+                  </li>
+                  <li>
+                    <strong>📱 Responsive Design:</strong> Ensured the platform is accessible and functional across all device sizes
+                  </li>
+                </ul>
+
+                <h5 style={{ marginTop: "1.5rem", color: "#3b8ff3" }}>Technical Implementation:</h5>
+                <ul>
+                  <li>
+                    <strong>🖥️ Backend:</strong> Built with Node.js and Express.js for a robust server architecture
+                  </li>
+                  <li>
+                    <strong>🗄️ Database:</strong> Utilized MongoDB for flexible data storage and Mongoose for object modeling
+                  </li>
+                  <li>
+                    <strong>🎨 Frontend:</strong> Implemented with EJS templating engine for dynamic content rendering
+                  </li>
+                  <li>
+                    <strong>📧 Email Integration:</strong> Integrated Nodemailer for automated email notifications and communications
+                  </li>
+                  <li>
+                    <strong>🔐 Security:</strong> Implemented bcrypt for password hashing and JWT for secure authentication
+                  </li>
+                </ul>
+
+                <h5 style={{ marginTop: "1.5rem", color: "#3b8ff3" }}>Impact:</h5>
+                <p>
+                  E-Alumni bridges the gap between educational institutions and their graduates, creating a vibrant community that benefits
+                  both current students and alumni. The platform facilitates mentorship opportunities, professional networking, and continued
+                  engagement with the institution, enhancing the value of the educational experience beyond graduation.
+                </p>
+              </div>
+              <div className="custom-modal-footer">
+                <button className="custom-modal-btn custom-modal-btn-primary" onClick={handleCloseEAlumniModal}>
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
         <div className="row" id="projects-list">
           <div className="col-md-5">
             <div className="card rounded shadow-sm">
@@ -314,15 +495,15 @@ const Projects = () => {
                     className="btn btn-primary mx-2"
                     onClick={handleShowFarmerModal}
                   >
-                    Details
+                    <FaInfoCircle className="me-1" /> Details
                   </button>
                   <a
                     className="btn btn-secondary mx-2"
-                    href="#"
+                    href="https://farmer-assistant-web-black.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    GitHub
+                    <FaExternalLinkAlt className="me-1" /> View Live
                   </a>
                 </div>
               </div>
@@ -350,7 +531,7 @@ const Projects = () => {
                     className="btn btn-primary mx-2"
                     onClick={handleShowKnowledgeModal}
                   >
-                    Details
+                    <FaInfoCircle className="me-1" /> Details
                   </button>
                   <a
                     className="btn btn-secondary mx-2"
@@ -358,7 +539,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    GitHub
+                    <FaExternalLinkAlt className="me-1" /> Ongoing
                   </a>
                 </div>
               </div>
@@ -369,7 +550,7 @@ const Projects = () => {
             <div className="card rounded shadow-sm">
               <div className="card-image">
                 <span className="badge project-type">MERN Stack</span>
-                <img src="E-commerce.jpeg" alt="E-alumni project" className="img-fluid" />
+                <img src="E-commerce.jpeg" alt="E-commerce application" className="img-fluid" />
               </div>
               <div className="tech-stack text-center mt-3">
                 <span className="badge tech-badge">MongoDB</span>
@@ -378,23 +559,23 @@ const Projects = () => {
                 <span className="badge tech-badge">Node</span>
               </div>
               <div className="card-body text-center">
-                <h6 className="text-uppercase">E-commerce application</h6>
+                <h6 className="text-uppercase">🛒 E-commerce Application</h6>
+                <p className="small text-muted mb-2">Jan 2025 - Mar 2025</p>
+                <p className="small mb-3">A full-featured e-commerce platform with product search, shopping cart, and secure payment processing.</p>
                 <div className="d-flex justify-content-center mt-3">
-                  <a
+                  <button
                     className="btn btn-primary mx-2"
-                    href="https://ecommerce-mern-utjs.onrender.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    onClick={handleShowEcommerceModal}
                   >
-                    View
-                  </a>
+                    <FaInfoCircle className="me-1" /> Details
+                  </button>
                   <a
                     className="btn btn-secondary mx-2"
-                    href="https://github.com/Himanshu-vashist/Ecommerce-mern"
+                    href="https://ecommerce-app-frontend-44e8.onrender.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    GitHub
+                    <FaExternalLinkAlt className="me-1" /> View Live
                   </a>
                 </div>
               </div>
@@ -413,23 +594,31 @@ const Projects = () => {
                 <span className="badge tech-badge">MongoDB</span>
               </div>
               <div className="card-body text-center">
-                <h6 className="text-uppercase">E-Alumni: Your One-Stop Solution for Alumni Needs!</h6>
+                <h6 className="text-uppercase">🎓 E-Alumni: Alumni Management Platform</h6>
+                <p className="small text-muted mb-2">Dec 2024 - Feb 2025</p>
+                <p className="small mb-3">A comprehensive platform connecting alumni with their alma mater and fellow graduates.</p>
                 <div className="d-flex justify-content-center mt-3">
-                  <a
+                  <button
                     className="btn btn-primary mx-2"
+                    onClick={handleShowEAlumniModal}
+                  >
+                    <FaInfoCircle className="me-1" /> Details
+                  </button>
+                  <a
+                    className="btn btn-secondary mx-2"
                     href="https://youtu.be/6ZiIxATHFQA?si=TpY9mLB7fQTOobLp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View
+                    <FaExternalLinkAlt className="me-1" /> Demo
                   </a>
                   <a
-                    className="btn btn-secondary mx-2"
+                    className="btn btn-outline-secondary mx-2"
                     href="https://github.com/Himanshu-vashist/E-Alumni"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    GitHub
+                    <FaGithub className="me-1" /> GitHub
                   </a>
                 </div>
               </div>
@@ -457,11 +646,11 @@ const Projects = () => {
                 <div className="d-flex justify-content-center mt-3">
                   <a
                     className="btn btn-primary mx-2"
-                    href="https://github.com/Himanshu-vashist/WanderWay"
+                    href="https://wanderway-vbsg.onrender.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View
+                    Click To View Live
                   </a>
                 </div>
               </div>

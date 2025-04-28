@@ -1,20 +1,30 @@
 import React from "react";
 import "./About.css";
 import Jump from "react-reveal/Jump";
+// Import the image directly
+import profileImage from "../../assets/images/profile.jpg";
+
 const About = () => {
   return (
     <>
       <Jump>
         <div className="about" id="about">
-          <div className="row">
-            <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
+          <div className="about-container">
+            <div className="about-img-container">
+              {/* Image styling */}
               <img
-                src="11.png"
+                src={profileImage}
                 alt="profile_pic"
+                onError={(e) => {
+                  console.error("Image failed to load");
+                  // Use a fallback image from public directory if the imported image fails
+                  e.target.src = process.env.PUBLIC_URL + '/logo512.png';
+                }}
+                className="about-profile-img"
               />
             </div>
-            <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-content">
-              <h1>About me</h1>
+            <div className="about-content">
+              <h1 className="about-heading">ABOUT ME</h1>
               <p>
                 I'm <strong>Himanshu Kumar</strong>, a versatile <strong>Full Stack Developer</strong> specializing in both web and mobile application development. As an Information Technology student at Heritage Institute of Technology, Kolkata, I combine technical expertise with creative problem-solving to build innovative digital solutions.
 
