@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Home from "../../pages/Home/Home";
 import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
 import "./Layout.css";
 import Menus from "../Menus/Menus";
@@ -63,7 +62,7 @@ const Layout = () => {
           <Menus toggle={toggle} />
         </div>
         <div className={toggle ? "main-content sidebar-toggle-active" : "main-content"}>
-          <Home />
+          {/* Content will be rendered by App.js */}
         </div>
       </div>
     </>

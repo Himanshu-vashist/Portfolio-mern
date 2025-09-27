@@ -1,4 +1,5 @@
 import Layout from "./components/Layout/Layout";
+import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Education from "./pages/Educations/Education";
@@ -24,12 +25,13 @@ function App() {
         <Layout />
         <div className="content-wrapper">
           <div className="container page-container">
+            <Home />
             <About />
-            <Education />
-            <Techstack />
             <Projects />
             <WorkExp />
+            <Techstack />
             <Certificates />
+            <Education />
             <Contact />
           </div>
         </div>

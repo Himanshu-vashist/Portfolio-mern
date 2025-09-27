@@ -1,7 +1,7 @@
 import React from 'react';
 import './Certifications.css';
 import { FaTrophy, FaAward, FaUsers, FaCode, FaBasketballBall } from 'react-icons/fa';
-import Fade from "react-reveal/Fade";
+import { Fade } from "../../components/Animation/AnimationWrapper";
 
 const Certifications = () => {
   const certificates = [

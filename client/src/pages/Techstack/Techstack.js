@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Techstack.css";
-import RubberBand from "react-reveal/RubberBand";
-import Fade from "react-reveal/Fade";
+import { RubberBand, Fade } from "../../components/Animation/AnimationWrapper";
 import { TechstackList } from "../../utils/TechstackList";
 
 // Function to get a random skill level between 75 and 95
@@ -27,10 +26,10 @@ const SkillCard = ({ tech, animation }) => {
   }, []);
 
   // Use the Fade component with the appropriate animation direction
-  const FadeComponent = Fade;
+  const direction = animation === 'left' ? 'left' : animation === 'right' ? 'right' : 'up';
 
   return (
-    <FadeComponent left={animation === 'left'} right={animation === 'right'}>
+    <Fade left={animation === 'left'} right={animation === 'right'}>
       <div className="skill-card">
         <div className="skill-card-content">
           <tech.icon className="tech-icon" />
@@ -43,7 +42,7 @@ const SkillCard = ({ tech, animation }) => {
           </div>
         </div>
       </div>
-    </FadeComponent>
+    </Fade>
   );
 };
 

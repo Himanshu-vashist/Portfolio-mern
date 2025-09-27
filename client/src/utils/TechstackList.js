@@ -237,21 +237,21 @@ export const TechstackList = [
     name: "Java",
     icon: FaJava,
   },
-  {
-    _id: 36,
-    name: "Python",
-    icon: FaPython,
-  },
-  {
-    _id: 37,
-    name: "C",
-    icon: SiC,
-  },
-  {
-    _id: 38,
-    name: "JSON",
-    icon: SiJson,
-  },
+  // {
+  //   _id: 36,
+  //   name: "Python",
+  //   icon: FaPython,
+  // },
+  // {
+  //   _id: 37,
+  //   name: "C",
+  //   icon: SiC,
+  // },
+  // {
+  //   _id: 38,
+  //   name: "JSON",
+  //   icon: SiJson,
+  // },
   {
     _id: 39,
     name: "OOP",
@@ -274,11 +274,11 @@ export const TechstackList = [
     name: "Docker",
     icon: SiDocker,
   },
-  {
-    _id: 43,
-    name: "Nginx",
-    icon: SiNginx,
-  },
+  // {
+  //   _id: 43,
+  //   name: "Nginx",
+  //   icon: SiNginx,
+  // },
   {
     _id: 44,
     name: "WordPress",
@@ -296,16 +296,16 @@ export const TechstackList = [
     name: "Figma",
     icon: SiFigma,
   },
-  {
-    _id: 47,
-    name: "Adobe XD",
-    icon: SiAdobexd,
-  },
-  {
-    _id: 48,
-    name: "Photoshop",
-    icon: SiAdobephotoshop,
-  },
+  // {
+  //   _id: 47,
+  //   name: "Adobe XD",
+  //   icon: SiAdobexd,
+  // },
+  // {
+  //   _id: 48,
+  //   name: "Photoshop",
+  //   icon: SiAdobephotoshop,
+  // },
   {
     _id: 49,
     name: "Adobe Premiere Pro",

@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import "./home.css";
-import Fade from "react-reveal/Fade";
+import { Fade } from "../../components/Animation/AnimationWrapper";
 
 const Home = () => {
   const [theme, setTheme] = useTheme();
