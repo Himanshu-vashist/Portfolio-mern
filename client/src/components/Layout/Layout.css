@@ -5,45 +5,74 @@
 
 .sidebar {
   height: 100vh;
-  background-color: #1a1a2e;
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   width: 90px;
   position: fixed;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+  box-shadow: 2px 0 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 100;
+  border-right: 1px solid rgba(59, 143, 243, 0.1);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(59, 143, 243, 0.5);
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 143, 243, 0.8);
+}
+
 .sidebar-toggle {
-  width: 200px;
+  width: 240px;
 }
 .sidebar-toggle-icons {
   display: flex;
-  align-items: right;
-  justify-content: right;
+  align-items: center;
+  justify-content: flex-end;
   cursor: pointer;
+  padding: 15px;
 }
+
+.sidebar-toggle-icons p {
+  margin: 0;
+}
+
 .sidebar-toggle-icons p svg {
-  background-color: #3b8ff3;
+  background: linear-gradient(135deg, #3b8ff3 0%, #2a7de0 100%);
   color: white;
-  margin-top: 10px;
   border-radius: 50%;
-  padding: 5px;
+  padding: 8px;
+  font-size: 20px;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(59, 143, 243, 0.3);
 }
 
 .sidebar-toggle-icons p svg:hover {
-  transform: rotate(180deg);
-  background-color: #2a7de0;
+  transform: rotate(180deg) scale(1.1);
+  background: linear-gradient(135deg, #2a7de0 0%, #1a5db0 100%);
+  box-shadow: 0 6px 15px rgba(59, 143, 243, 0.5);
 }
 
 .main-content {
   width: 100%;
   margin-left: 90px; /* Same as sidebar width */
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* When sidebar is toggled to be wider */
 .sidebar-toggle-active {
-  margin-left: 200px; /* Same as sidebar-toggle width */
+  margin-left: 240px; /* Same as sidebar-toggle width */
 }
 
 /* ==== MOBILE VIEW ========== */

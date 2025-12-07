@@ -10,6 +10,7 @@ import {
   FcPortraitMode,
   FcReadingEbook,
   FcVideoProjector,
+  FcFeedback,
 } from "react-icons/fc";
 const Menus = ({ toggle }) => {
   return (
@@ -19,7 +20,7 @@ const Menus = ({ toggle }) => {
           <Zoom>
             <div className="navbar-profile-pic">
               <img
-                src="profile.png"
+                src="main.jpg"
                 alt="profile pic"
               />
             </div>
@@ -109,6 +110,18 @@ const Menus = ({ toggle }) => {
                   >
                     <FcReadingEbook />
                     Education
+                  </Link>
+                </div>
+                <div className="nav-link">
+                  <Link
+                    to="feedback"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={100}
+                  >
+                    <FcFeedback />
+                    Feedback
                   </Link>
                 </div>
                 <div className="nav-link">
@@ -206,6 +219,17 @@ const Menus = ({ toggle }) => {
                   duration={100}
                 >
                   <FcReadingEbook />
+                </Link>
+              </div>
+              <div className="nav-link">
+                <Link
+                  to="feedback"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcFeedback />
                 </Link>
               </div>
               <div className="nav-link">

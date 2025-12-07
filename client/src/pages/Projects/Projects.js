@@ -334,324 +334,236 @@ const Projects = () => {
 
   return (
     <>
-      {/* Featured Project Section */}
-      <div className="container-fluid featured-project-section position-relative overflow-hidden" style={{ 
-        background: "linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 60%, #f5576c 100%)", 
-        color: "white", 
-        padding: "80px 0",
-        marginBottom: "50px",
-        minHeight: "100vh"
-      }}>
-        {/* Animated Background Elements */}
-        <div className="position-absolute top-0 start-0 w-100 h-100" style={{ opacity: 0.15 }}>
-          <div className="position-absolute" style={{ 
-            top: "10%", 
-            left: "10%", 
-            width: "120px", 
-            height: "120px", 
-            background: "linear-gradient(135deg, rgba(34, 197, 94, 0.3) 0%, rgba(59, 130, 246, 0.2) 100%)", 
-            borderRadius: "50%",
-            animation: "float 6s ease-in-out infinite",
-            boxShadow: "0 0 30px rgba(34, 197, 94, 0.3)"
-          }}></div>
-          <div className="position-absolute" style={{ 
-            top: "70%", 
-            right: "15%", 
-            width: "180px", 
-            height: "180px", 
-            background: "linear-gradient(135deg, rgba(147, 51, 234, 0.3) 0%, rgba(236, 72, 153, 0.2) 100%)", 
-            borderRadius: "50%",
-            animation: "float 8s ease-in-out infinite reverse",
-            boxShadow: "0 0 40px rgba(147, 51, 234, 0.3)"
-          }}></div>
-          <div className="position-absolute" style={{ 
-            bottom: "20%", 
-            left: "5%", 
-            width: "100px", 
-            height: "100px", 
-            background: "linear-gradient(135deg, rgba(245, 158, 11, 0.3) 0%, rgba(248, 113, 113, 0.2) 100%)", 
-            borderRadius: "50%",
-            animation: "float 10s ease-in-out infinite",
-            boxShadow: "0 0 25px rgba(245, 158, 11, 0.3)"
-          }}></div>
-          <div className="position-absolute" style={{ 
-            top: "40%", 
-            right: "5%", 
-            width: "90px", 
-            height: "90px", 
-            background: "linear-gradient(135deg, rgba(59, 130, 246, 0.25) 0%, rgba(16, 185, 129, 0.15) 100%)", 
-            borderRadius: "50%",
-            animation: "float 12s ease-in-out infinite",
-            boxShadow: "0 0 20px rgba(59, 130, 246, 0.25)"
-          }}></div>
-        </div>
+      {/* Modern Featured Projects Section */}
+      <div className="featured-projects-modern" id="projects">
+        <div className="container">
+          {/* Section Header */}
+          <div className="section-header text-center mb-5">
+            <div className="badge-wrapper mb-3">
+              <span className="featured-badge-new">⭐ Featured Projects</span>
+            </div>
+            <h1 className="section-title">
+              My <span className="gradient-text">Best Work</span>
+            </h1>
+            <p className="section-subtitle">
+              Showcasing innovative mobile and web applications
+            </p>
+          </div>
 
-        <div className="container position-relative">
-          {/* Header Section */}
-          <div className="text-center mb-5" style={{ paddingTop: "20px" }}>
-            <div className="mb-4">
-              <span className="badge px-4 py-2 mb-3 border border-warning text-warning" style={{ 
-                fontSize: "1.1rem", 
-                background: "rgba(255,193,7,0.1)",
-                borderRadius: "25px",
-                backdropFilter: "blur(10px)"
+          {/* Premium Knowledge Bubble Showcase */}
+          {/* KB Logo & Title Header */}
+          <div className="text-center mb-5" style={{ animation: "fadeInUp 1s ease-out" }}>
+            <img 
+              src="kblogo.png" 
+              alt="Knowledge Bubble Logo"
+              style={{ 
+                width: "140px",
+                height: "140px",
+                objectFit: "contain",
+                filter: "drop-shadow(0 10px 25px rgba(102, 126, 234, 0.4))",
+                animation: "float 3s ease-in-out infinite",
+                marginBottom: "1.5rem"
+              }}
+            />
+            <h2 className="display-4 fw-bold mb-2" style={{
+              background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text"
+            }}>
+              Knowledge Bubble
+            </h2>
+            <p className="lead text-muted mb-3">Revolutionary Educational Mobile Learning Platform</p>
+            <div className="d-inline-flex gap-3 justify-content-center flex-wrap">
+              <span className="badge px-4 py-2 shadow" style={{
+                background: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
+                color: "white",
+                borderRadius: "20px",
+                fontSize: "0.95rem",
+                fontWeight: "600",
+                animation: "pulse 2s infinite"
               }}>
-                ⭐ FEATURED PROJECT
+                🟢 Live on Play Store
+              </span>
+              <span className="badge px-4 py-2" style={{
+                background: "linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.1) 100%)",
+                color: "#3b82f6",
+                border: "1px solid rgba(59, 130, 246, 0.3)",
+                borderRadius: "20px",
+                fontSize: "0.95rem",
+                fontWeight: "600"
+              }}>
+                ⭐ 4.8+ Rating
+              </span>
+              <span className="badge px-4 py-2" style={{
+                background: "linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0.1) 100%)",
+                color: "#10b981",
+                border: "1px solid rgba(16, 185, 129, 0.3)",
+                borderRadius: "20px",
+                fontSize: "0.95rem",
+                fontWeight: "600"
+              }}>
+                📚 10+ Chapters
+              </span>
+              <span className="badge px-4 py-2" style={{
+                background: "linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0.1) 100%)",
+                color: "#f59e0b",
+                border: "1px solid rgba(245, 158, 11, 0.3)",
+                borderRadius: "20px",
+                fontSize: "0.95rem",
+                fontWeight: "600"
+              }}>
+                🎮 Gamified Learning
               </span>
             </div>
-            
-            <div className="mb-4" style={{ animation: "slideInUp 1s ease-out" }}>
-              <h1 className="display-2 fw-bold mb-3" style={{ 
-                textShadow: "0 4px 20px rgba(0,0,0,0.3)",
-                background: "linear-gradient(45deg, #fff, #f8f9fa)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text"
-              }}>
-                📱 Knowledge Bubble
-              </h1>
-              <h3 className="mb-4 fw-light" style={{ opacity: 0.9 }}>Educational Mobile Learning Platform</h3>
-            </div>
-            
-            <div className="row justify-content-center mb-4">
-              <div className="col-lg-10">
-                <div className="card border-0 kb-featured-card" style={{ 
-                  background: "linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 100%) !important", 
-                  backdropFilter: "blur(15px)",
-                  borderRadius: "20px",
-                  border: "1px solid rgba(255,255,255,0.2)",
-                  color: "white !important"
+          </div>
+
+          {/* Full Width KB Preview Image */}
+          <div className="row mb-5">
+            <div className="col-12">
+              <div className="position-relative" style={{ animation: "fadeInUp 1.2s ease-out" }}>
+                <div className="card border-0 shadow-lg" style={{
+                  borderRadius: "30px",
+                  overflow: "hidden",
+                  transition: "all 0.4s ease",
+                  background: "linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%)"
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-10px)";
+                  e.currentTarget.style.boxShadow = "0 30px 60px rgba(102, 126, 234, 0.3)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "0 15px 40px rgba(0,0,0,0.15)";
                 }}>
-                  <div className="card-body p-4">
-                    <p className="lead mb-3" style={{ fontSize: "1.3rem", lineHeight: "1.6", color: "white !important" }}>
-                      A comprehensive educational mobile application that makes learning engaging and interactive for users of all ages.
-                    </p>
-                    <div className="d-inline-flex align-items-center px-4 py-2 rounded-pill kb-success-badge" style={{ 
-                      background: "linear-gradient(135deg, rgba(40, 167, 69, 0.25) 0%, rgba(34, 197, 94, 0.15) 100%) !important", 
-                      border: "2px solid rgba(40, 167, 69, 0.4)",
-                      backdropFilter: "blur(10px)",
-                      color: "white !important"
-                    }}>
-                      <span className="fw-bold" style={{ color: "white !important" }}>🎉 Successfully launched Version 1.0 on Google Play Store!</span>
-                    </div>
-                    <div className="mt-2">
-                      <span className="badge px-3 py-2 kb-dev-badge" style={{ 
-                        background: "linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(147, 51, 234, 0.2) 100%) !important",
-                        borderRadius: "15px",
-                        border: "1px solid rgba(59, 130, 246, 0.4)",
-                        color: "white !important"
-                      }}>
-                        🚀 Currently leading development to Version 2.0
-                      </span>
-                    </div>
-                  </div>
+                  <img 
+                    src="kb-preview.png" 
+                    alt="Knowledge Bubble App Preview" 
+                    className="img-fluid w-100" 
+                    style={{ 
+                      objectFit: "cover",
+                      borderRadius: "30px"
+                    }} 
+                  />
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Main Content Section */}
-          <div className="row align-items-center g-5">
-            {/* Image Section */}
-            <div className="col-lg-6 mb-4">
-              <div className="position-relative" style={{ animation: "fadeInLeft 1s ease-out" }}>
-                <div className="card border-0" style={{ 
-                  background: "linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(99, 102, 241, 0.1) 50%, rgba(255,255,255,0.05) 100%)", 
-                  backdropFilter: "blur(20px)",
-                  borderRadius: "30px",
-                  overflow: "hidden",
-                  border: "1px solid rgba(255,255,255,0.4)",
-                  boxShadow: "0 20px 60px rgba(99, 102, 241, 0.2)"
-                }}>
-                  <div className="position-relative p-4">
-                    <img 
-                      src="knowledge-bubble.png" 
-                      alt="Knowledge Bubble App"
-                      className="img-fluid rounded shadow-lg"
-                      style={{ 
-                        maxHeight: "500px", 
-                        objectFit: "contain", 
-                        width: "100%",
-                        borderRadius: "20px"
-                      }}
-                    />
-                    <div className="position-absolute top-0 end-0 m-4">
-                      <span className="badge bg-success px-3 py-2 shadow" style={{ 
-                        borderRadius: "15px",
-                        fontSize: "0.9rem",
-                        animation: "pulse 2s infinite"
-                      }}>
-                        🟢 Live on Play Store
-                      </span>
-                    </div>
-                    
-                    {/* Floating stats */}
-                    <div className="position-absolute bottom-0 start-0 m-4">
-                      <div className="d-flex gap-2">
-                        <div className="badge bg-primary px-3 py-2" style={{ borderRadius: "12px" }}>
-                          📚 10+ Chapters
-                        </div>
-                        <div className="badge bg-warning text-dark px-3 py-2" style={{ borderRadius: "12px" }}>
-                          ⭐ 4.8+ Rating
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Content Section */}
+          {/* Features & Description Row */}
+          <div className="row g-5 align-items-start mb-5">
+            {/* Left: Description */}
             <div className="col-lg-6">
-              <div style={{ animation: "fadeInRight 1s ease-out" }}>
-                {/* Project Info Cards */}
-                <div className="row g-3 mb-4">
-                  <div className="col-6">
-                    <div className="card border-0 h-100 kb-info-card" style={{ 
-                      background: "linear-gradient(135deg, rgba(255, 193, 7, 0.2) 0%, rgba(255, 193, 7, 0.05) 100%) !important", 
-                      backdropFilter: "blur(10px)",
-                      borderRadius: "15px",
-                      border: "1px solid rgba(255, 193, 7, 0.3)",
-                      color: "white !important"
-                    }}>
-                      <div className="card-body p-3 text-center">
-                        <h6 className="text-warning mb-1" style={{ color: "#ffc107 !important" }}>👨‍💻 Role</h6>
-                        <p className="mb-0 fw-bold" style={{ color: "white !important" }}>Technical Lead</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-6">
-                    <div className="card border-0 h-100 kb-info-card" style={{ 
-                      background: "linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.05) 100%) !important", 
-                      backdropFilter: "blur(10px)",
-                      borderRadius: "15px",
-                      border: "1px solid rgba(59, 130, 246, 0.3)",
-                      color: "white !important"
-                    }}>
-                      <div className="card-body p-3 text-center">
-                        <h6 className="text-info mb-1" style={{ color: "#0dcaf0 !important" }}>📅 Duration</h6>
-                        <p className="mb-0 fw-bold" style={{ color: "white !important" }}>Feb 2025 - Present</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-6">
-                    <div className="card border-0 h-100 kb-info-card" style={{ 
-                      background: "linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(34, 197, 94, 0.05) 100%) !important", 
-                      backdropFilter: "blur(10px)",
-                      borderRadius: "15px",
-                      border: "1px solid rgba(34, 197, 94, 0.3)",
-                      color: "white !important"
-                    }}>
-                      <div className="card-body p-3 text-center">
-                        <h6 className="text-success mb-1" style={{ color: "#198754 !important" }}>🏢 Company</h6>
-                        <p className="mb-0 fw-bold" style={{ color: "white !important" }}>Jabsz Studios</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-6">
-                    <div className="card border-0 h-100 kb-info-card" style={{ 
-                      background: "linear-gradient(135deg, rgba(147, 51, 234, 0.2) 0%, rgba(147, 51, 234, 0.05) 100%) !important", 
-                      backdropFilter: "blur(10px)",
-                      borderRadius: "15px",
-                      border: "1px solid rgba(147, 51, 234, 0.3)",
-                      color: "white !important"
-                    }}>
-                      <div className="card-body p-3 text-center">
-                        <h6 className="text-light mb-1" style={{ color: "white !important" }}>📊 Status</h6>
-                        <div>
-                          <span className="badge bg-success me-1" style={{ fontSize: "0.7rem", backgroundColor: "#198754 !important" }}>V1.0</span>
-                          <span className="badge bg-info" style={{ fontSize: "0.7rem", backgroundColor: "#0dcaf0 !important" }}>V2.0 Dev</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Key Features */}
-                <div className="card border-0 mb-4 kb-features-card" style={{ 
-                  background: "linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.1) 100%) !important", 
-                  backdropFilter: "blur(15px)",
-                  borderRadius: "20px",
-                  border: "1px solid rgba(99, 102, 241, 0.25)",
-                  color: "white !important"
-                }}>
-                  <div className="card-body p-4">
-                    <h5 className="mb-3 text-warning" style={{ color: "#ffc107 !important" }}>🌟 Key Features</h5>
-                    <div className="row g-2">
-                      <div className="col-12">
-                        <div className="d-flex align-items-center mb-2 p-3 rounded kb-feature-item" style={{ 
-                          background: "linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.05) 100%) !important",
-                          border: "1px solid rgba(59, 130, 246, 0.2)",
-                          color: "white !important"
-                        }}>
-                          <span className="me-3">📚</span>
-                          <span style={{ color: "white !important" }}>Interactive Chapter System with 10+ educational topics</span>
-                        </div>
-                      </div>
-                      <div className="col-12">
-                        <div className="d-flex align-items-center mb-2 p-3 rounded kb-feature-item" style={{ 
-                          background: "linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(34, 197, 94, 0.05) 100%) !important",
-                          border: "1px solid rgba(34, 197, 94, 0.2)",
-                          color: "white !important"
-                        }}>
-                          <span className="me-3">🎮</span>
-                          <span style={{ color: "white !important" }}>Gamified Learning with star-based progression</span>
-                        </div>
-                      </div>
-                      <div className="col-12">
-                        <div className="d-flex align-items-center mb-2 p-3 rounded kb-feature-item" style={{ 
-                          background: "linear-gradient(135deg, rgba(147, 51, 234, 0.15) 0%, rgba(147, 51, 234, 0.05) 100%) !important",
-                          border: "1px solid rgba(147, 51, 234, 0.2)",
-                          color: "white !important"
-                        }}>
-                          <span className="me-3">📱</span>
-                          <span style={{ color: "white !important" }}>Multi-Platform Support (iOS & Android)</span>
-                        </div>
-                      </div>
-                      <div className="col-12">
-                        <div className="d-flex align-items-center mb-2 p-3 rounded kb-feature-item" style={{ 
-                          background: "linear-gradient(135deg, rgba(236, 72, 153, 0.15) 0%, rgba(236, 72, 153, 0.05) 100%) !important",
-                          border: "1px solid rgba(236, 72, 153, 0.2)",
-                          color: "white !important"
-                        }}>
-                          <span className="me-3">🎨</span>
-                          <span style={{ color: "white !important" }}>Rich Media Integration with interactive puzzles</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Technologies */}
+              <div style={{ animation: "fadeInLeft 1.4s ease-out" }}>
                 <div className="mb-4">
-                  <h5 className="mb-3 text-info" style={{ color: "#0dcaf0 !important" }}>⚡ Technologies</h5>
+                  <span className="badge px-4 py-2 mb-3" style={{
+                    background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                    color: "white",
+                    borderRadius: "20px",
+                    fontSize: "0.9rem",
+                    fontWeight: "600"
+                  }}>
+                    🏆 Featured Project - Technical Lead
+                  </span>
+                  <p className="lead text-secondary mb-4" style={{ fontSize: "1.1rem", lineHeight: "1.8" }}>
+                    A cutting-edge educational mobile application that transforms learning into an engaging, 
+                    interactive experience. Developed with <strong>React Native</strong> and <strong>TypeScript</strong>, 
+                    Knowledge Bubble delivers gamified educational content across multiple platforms, making complex 
+                    topics accessible and enjoyable for learners of all ages.
+                  </p>
+                </div>
+
+                {/* Key Highlights */}
+                <div className="mb-4">
+                  <h5 className="fw-bold mb-3" style={{ color: "#667eea" }}>
+                    <span className="me-2">✨</span>Key Highlights
+                  </h5>
+                  <div className="row g-3">
+                    <div className="col-12">
+                      <div className="d-flex align-items-start p-3 rounded-3" style={{
+                        background: "linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%)",
+                        border: "1px solid rgba(102, 126, 234, 0.15)"
+                      }}>
+                        <span className="me-3 fs-4">🎮</span>
+                        <div>
+                          <h6 className="fw-bold mb-1" style={{ color: "#2d3748" }}>Gamified Learning Experience</h6>
+                          <p className="mb-0 text-secondary small">Star-based progression system with unlockable levels and achievements to keep learners motivated and engaged throughout their educational journey.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-12">
+                      <div className="d-flex align-items-start p-3 rounded-3" style={{
+                        background: "linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%)",
+                        border: "1px solid rgba(102, 126, 234, 0.15)"
+                      }}>
+                        <span className="me-3 fs-4">📱</span>
+                        <div>
+                          <h6 className="fw-bold mb-1" style={{ color: "#2d3748" }}>Cross-Platform Excellence</h6>
+                          <p className="mb-0 text-secondary small">Built with React Native for seamless performance on both iOS and Android, ensuring a consistent, high-quality experience across all devices.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-12">
+                      <div className="d-flex align-items-start p-3 rounded-3" style={{
+                        background: "linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%)",
+                        border: "1px solid rgba(102, 126, 234, 0.15)"
+                      }}>
+                        <span className="me-3 fs-4">🎨</span>
+                        <div>
+                          <h6 className="fw-bold mb-1" style={{ color: "#2d3748" }}>Rich Interactive Content</h6>
+                          <p className="mb-0 text-secondary small">Features 10+ educational chapters with interactive puzzles, multimedia integration, and visually stunning animations that make learning captivating.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tech Stack */}
+                <div className="mb-4">
+                  <h6 className="fw-bold mb-3" style={{ color: "#667eea" }}>
+                    <span className="me-2">⚡</span>Technology Stack
+                  </h6>
                   <div className="d-flex flex-wrap gap-2">
-                    {["React Native", "TypeScript", "Firebase", "Android Studio", "Xcode"].map((tech, index) => (
-                      <span key={index} className="badge px-3 py-2 kb-tech-badge" style={{ 
+                    {["React Native", "TypeScript", "Firebase", "Android Studio", "Xcode", "Redux", "REST APIs"].map((tech, i) => (
+                      <span key={i} className="badge px-3 py-2" style={{
                         background: `linear-gradient(135deg, ${[
-                          "rgba(59, 130, 246, 0.25)",
-                          "rgba(34, 197, 94, 0.25)", 
-                          "rgba(245, 158, 11, 0.25)",
-                          "rgba(236, 72, 153, 0.25)",
-                          "rgba(147, 51, 234, 0.25)"
-                        ][index]} 0%, ${[
-                          "rgba(59, 130, 246, 0.1)",
-                          "rgba(34, 197, 94, 0.1)", 
-                          "rgba(245, 158, 11, 0.1)",
-                          "rgba(236, 72, 153, 0.1)",
-                          "rgba(147, 51, 234, 0.1)"
-                        ][index]} 100%) !important`, 
-                        color: "white !important",
-                        borderRadius: "15px",
+                          "rgba(59, 130, 246, 0.15)",
+                          "rgba(16, 185, 129, 0.15)",
+                          "rgba(245, 158, 11, 0.15)",
+                          "rgba(236, 72, 153, 0.15)",
+                          "rgba(147, 51, 234, 0.15)",
+                          "rgba(239, 68, 68, 0.15)",
+                          "rgba(6, 182, 212, 0.15)"
+                        ][i]} 0%, ${[
+                          "rgba(59, 130, 246, 0.05)",
+                          "rgba(16, 185, 129, 0.05)",
+                          "rgba(245, 158, 11, 0.05)",
+                          "rgba(236, 72, 153, 0.05)",
+                          "rgba(147, 51, 234, 0.05)",
+                          "rgba(239, 68, 68, 0.05)",
+                          "rgba(6, 182, 212, 0.05)"
+                        ][i]} 100%)`,
+                        color: [
+                          "#3b82f6",
+                          "#10b981",
+                          "#f59e0b",
+                          "#ec4899",
+                          "#9333ea",
+                          "#ef4444",
+                          "#06b6d4"
+                        ][i],
+                        borderRadius: "12px",
+                        fontSize: "0.85rem",
+                        fontWeight: "600",
                         border: `1px solid ${[
-                          "rgba(59, 130, 246, 0.4)",
-                          "rgba(34, 197, 94, 0.4)", 
-                          "rgba(245, 158, 11, 0.4)",
-                          "rgba(236, 72, 153, 0.4)",
-                          "rgba(147, 51, 234, 0.4)"
-                        ][index]}`,
-                        animation: `fadeInUp ${0.5 + index * 0.1}s ease-out`,
-                        backdropFilter: "blur(5px)"
+                          "rgba(59, 130, 246, 0.3)",
+                          "rgba(16, 185, 129, 0.3)",
+                          "rgba(245, 158, 11, 0.3)",
+                          "rgba(236, 72, 153, 0.3)",
+                          "rgba(147, 51, 234, 0.3)",
+                          "rgba(239, 68, 68, 0.3)",
+                          "rgba(6, 182, 212, 0.3)"
+                        ][i]}`
                       }}>
                         {tech}
                       </span>
@@ -659,62 +571,312 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* Action Buttons */}
+                {/* CTA Buttons */}
                 <div className="d-flex flex-wrap gap-3">
                   <a 
                     href="https://play.google.com/store/apps/details?id=com.JabszGamingStudios.KnowledgeBubble&pcampaignid=web_share"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-lg px-4 py-3 position-relative overflow-hidden"
-                    style={{ 
-                      background: "linear-gradient(45deg, #28a745, #20c997)",
+                    className="btn btn-lg px-5 py-3"
+                    style={{
+                      background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
                       border: "none",
-                      borderRadius: "25px",
+                      borderRadius: "15px",
                       color: "white",
-                      boxShadow: "0 8px 25px rgba(40, 167, 69, 0.3)",
-                      transition: "all 0.3s ease",
-                      fontWeight: "600"
+                      fontWeight: "600",
+                      boxShadow: "0 10px 30px rgba(102, 126, 234, 0.3)",
+                      transition: "all 0.3s ease"
                     }}
-                    onMouseOver={(e) => {
-                      e.target.style.transform = "translateY(-2px)";
-                      e.target.style.boxShadow = "0 12px 35px rgba(40, 167, 69, 0.4)";
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = "translateY(-3px)";
+                      e.currentTarget.style.boxShadow = "0 15px 40px rgba(102, 126, 234, 0.4)";
                     }}
-                    onMouseOut={(e) => {
-                      e.target.style.transform = "translateY(0)";
-                      e.target.style.boxShadow = "0 8px 25px rgba(40, 167, 69, 0.3)";
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = "translateY(0)";
+                      e.currentTarget.style.boxShadow = "0 10px 30px rgba(102, 126, 234, 0.3)";
                     }}
                   >
                     <FaPlay className="me-2" />
-                    Play Store
+                    View on Play Store
                   </a>
-                  
                   <button 
-                    className="btn btn-lg px-4 py-3"
+                    className="btn btn-lg px-5 py-3"
                     onClick={handleShowKnowledgeModal}
-                    style={{ 
-                      background: "linear-gradient(135deg, rgba(99, 102, 241, 0.3) 0%, rgba(147, 51, 234, 0.2) 100%)",
-                      border: "2px solid rgba(99, 102, 241, 0.4)",
-                      borderRadius: "25px",
-                      color: "white",
-                      backdropFilter: "blur(10px)",
-                      transition: "all 0.3s ease",
+                    style={{
+                      background: "white",
+                      border: "2px solid #667eea",
+                      borderRadius: "15px",
+                      color: "#667eea",
                       fontWeight: "600",
-                      boxShadow: "0 8px 25px rgba(99, 102, 241, 0.3)"
+                      transition: "all 0.3s ease"
                     }}
-                    onMouseOver={(e) => {
-                      e.target.style.background = "linear-gradient(135deg, rgba(99, 102, 241, 0.4) 0%, rgba(147, 51, 234, 0.3) 100%)";
-                      e.target.style.transform = "translateY(-2px)";
-                      e.target.style.boxShadow = "0 12px 35px rgba(99, 102, 241, 0.4)";
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = "rgba(102, 126, 234, 0.1)";
+                      e.currentTarget.style.transform = "translateY(-3px)";
                     }}
-                    onMouseOut={(e) => {
-                      e.target.style.background = "linear-gradient(135deg, rgba(99, 102, 241, 0.3) 0%, rgba(147, 51, 234, 0.2) 100%)";
-                      e.target.style.transform = "translateY(0)";
-                      e.target.style.boxShadow = "0 8px 25px rgba(99, 102, 241, 0.3)";
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = "white";
+                      e.currentTarget.style.transform = "translateY(0)";
                     }}
                   >
                     <FaInfoCircle className="me-2" />
-                    View Details
+                    View Full Details
                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* App Preview Showcase */}
+          <div className="row g-4 mb-5" style={{ display: "none" }}>
+            <div className="col-12 text-center mb-3">
+              <h4 className="fw-bold" style={{
+                background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text"
+              }}>
+                <span className="me-2">📱</span>App Preview
+              </h4>
+              <p className="text-muted">Experience the intuitive design and engaging interface</p>
+            </div>
+            <div className="col-12">
+              <div className="card border-0 shadow-lg" style={{
+                borderRadius: "30px",
+                overflow: "hidden",
+                transition: "all 0.4s ease"
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "translateY(-10px) scale(1.02)";
+                e.currentTarget.style.boxShadow = "0 25px 50px rgba(102, 126, 234, 0.25)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "translateY(0) scale(1)";
+                e.currentTarget.style.boxShadow = "0 10px 40px rgba(0,0,0,0.15)";
+              }}>
+                <img 
+                  src="kb-preview.png" 
+                  alt="Knowledge Bubble App Preview" 
+                  className="img-fluid w-100" 
+                  style={{ 
+                    objectFit: "cover",
+                    maxHeight: "600px"
+                  }} 
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* App Showcase Grid - 3 Featured Apps */}
+          <div className="apps-showcase-grid" style={{ display: "none" }}>
+            {/* Removed - Replaced with premium showcase above */}
+            <div className="app-showcase-card" style={{ animationDelay: "0s" }}>
+              <div className="app-card-inner">
+                <div className="app-card-header">
+                  <div className="app-icon-wrapper">
+                    <span className="app-icon">📱</span>
+                  </div>
+                  <div className="app-status-badge live">
+                    <span className="status-dot"></span>
+                    Live on Play Store
+                  </div>
+                </div>
+                
+                <div className="app-card-image">
+                  <img src="knowledge-bubble.png" alt="Knowledge Bubble" />
+                  <div className="app-overlay">
+                    <div className="app-stats">
+                      <div className="stat-item">
+                        <span className="stat-icon">⭐</span>
+                        <span className="stat-value">4.8+</span>
+                      </div>
+                      <div className="stat-item">
+                        <span className="stat-icon">📚</span>
+                        <span className="stat-value">10+ Chapters</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="app-card-content">
+                  <h3 className="app-title">Knowledge Bubble</h3>
+                  <p className="app-category">Educational Mobile Platform</p>
+                  <p className="app-description">
+                    Comprehensive educational mobile app with gamified learning, 
+                    interactive chapters, and multi-platform support for engaging education.
+                  </p>
+                  
+                  <div className="app-tech-stack">
+                    <span className="tech-chip">React Native</span>
+                    <span className="tech-chip">TypeScript</span>
+                    <span className="tech-chip">Firebase</span>
+                  </div>
+
+                  <div className="app-meta">
+                    <div className="meta-item">
+                      <span className="meta-label">Role:</span>
+                      <span className="meta-value">Technical Lead</span>
+                    </div>
+                    <div className="meta-item">
+                      <span className="meta-label">Company:</span>
+                      <span className="meta-value">Jabsz Studios</span>
+                    </div>
+                  </div>
+
+                  <div className="app-actions">
+                    <a 
+                      href="https://play.google.com/store/apps/details?id=com.JabszGamingStudios.KnowledgeBubble&pcampaignid=web_share"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-app-primary"
+                    >
+                      <FaPlay /> Play Store
+                    </a>
+                    <button 
+                      className="btn-app-secondary"
+                      onClick={handleShowKnowledgeModal}
+                    >
+                      <FaInfoCircle /> Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* App 2: Farmer Assistant */}
+            <div className="app-showcase-card" style={{ animationDelay: "0.2s" }}>
+              <div className="app-card-inner">
+                <div className="app-card-header">
+                  <div className="app-icon-wrapper">
+                    <span className="app-icon">🌾</span>
+                  </div>
+                  <div className="app-status-badge development">
+                    <span className="status-dot"></span>
+                    In Development
+                  </div>
+                </div>
+                
+                <div className="app-card-image">
+                  <img src="farmer-assistant.png" alt="Farmer Assistant" />
+                  <div className="app-overlay">
+                    <div className="app-stats">
+                      <div className="stat-item">
+                        <span className="stat-icon">🔍</span>
+                        <span className="stat-value">QR Scan</span>
+                      </div>
+                      <div className="stat-item">
+                        <span className="stat-icon">📈</span>
+                        <span className="stat-value">Price AI</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="app-card-content">
+                  <h3 className="app-title">Farmer Assistant</h3>
+                  <p className="app-category">Agricultural Management App</p>
+                  <p className="app-description">
+                    Empowering farmers with QR code verification, market price predictions, 
+                    weather forecasting, and comprehensive crop management tools.
+                  </p>
+                  
+                  <div className="app-tech-stack">
+                    <span className="tech-chip">React Native</span>
+                    <span className="tech-chip">Expo</span>
+                    <span className="tech-chip">Firebase</span>
+                  </div>
+
+                  <div className="app-meta">
+                    <div className="meta-item">
+                      <span className="meta-label">Role:</span>
+                      <span className="meta-value">Full Stack Developer</span>
+                    </div>
+                    <div className="meta-item">
+                      <span className="meta-label">Duration:</span>
+                      <span className="meta-value">Apr 2025 - Present</span>
+                    </div>
+                  </div>
+
+                  <div className="app-actions">
+                    <button 
+                      className="btn-app-primary"
+                      onClick={handleShowFarmerModal}
+                    >
+                      <FaInfoCircle /> View Details
+                    </button>
+                    <button className="btn-app-secondary" disabled>
+                      <FaGithub /> Private Repo
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* App 3: E-Commerce Platform */}
+            <div className="app-showcase-card" style={{ animationDelay: "0.4s" }}>
+              <div className="app-card-inner">
+                <div className="app-card-header">
+                  <div className="app-icon-wrapper">
+                    <span className="app-icon">🛒</span>
+                  </div>
+                  <div className="app-status-badge completed">
+                    <span className="status-dot"></span>
+                    Completed
+                  </div>
+                </div>
+                
+                <div className="app-card-image">
+                  <img src="E-commerce.jpeg" alt="E-Commerce Platform" />
+                  <div className="app-overlay">
+                    <div className="app-stats">
+                      <div className="stat-item">
+                        <span className="stat-icon">🛍️</span>
+                        <span className="stat-value">Full Stack</span>
+                      </div>
+                      <div className="stat-item">
+                        <span className="stat-icon">💳</span>
+                        <span className="stat-value">Payments</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="app-card-content">
+                  <h3 className="app-title">E-Commerce Platform</h3>
+                  <p className="app-category">MERN Stack Application</p>
+                  <p className="app-description">
+                    Full-featured e-commerce platform with product management, 
+                    shopping cart, payment integration, and admin dashboard.
+                  </p>
+                  
+                  <div className="app-tech-stack">
+                    <span className="tech-chip">React</span>
+                    <span className="tech-chip">Node.js</span>
+                    <span className="tech-chip">MongoDB</span>
+                  </div>
+
+                  <div className="app-meta">
+                    <div className="meta-item">
+                      <span className="meta-label">Type:</span>
+                      <span className="meta-value">Web Application</span>
+                    </div>
+                    <div className="meta-item">
+                      <span className="meta-label">Stack:</span>
+                      <span className="meta-value">MERN</span>
+                    </div>
+                  </div>
+
+                  <div className="app-actions">
+                    <button 
+                      className="btn-app-primary"
+                      onClick={handleShowEcommerceModal}
+                    >
+                      <FaInfoCircle /> View Details
+                    </button>
+                    <button className="btn-app-secondary" disabled>
+                      <FaGithub /> Private Repo
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -836,10 +998,26 @@ const Projects = () => {
       </div>
 
       <div className="container project-section" id="projects">
-        <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
-          Other Notable Projects
-        </h2>
-        <hr />
+        <div className="text-center mb-5 py-4" style={{ animation: "fadeInUp 1s ease-out" }}>
+          <div className="d-inline-block position-relative mb-4">
+            <h2 className="display-4 fw-bold mb-0" style={{
+              color: "var(--primary-text-color, #2d3748)",
+              letterSpacing: "1px"
+            }}>
+              Other Notable Projects
+            </h2>
+            <div style={{
+              position: "absolute",
+              bottom: "-10px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              width: "100px",
+              height: "4px",
+              background: "linear-gradient(90deg, #f093fb 0%, #f5576c 100%)",
+              borderRadius: "10px"
+            }}></div>
+          </div>
+        </div>
 
         {/* Farmer Assistant Project Modal */}
         {showFarmerModal && (
@@ -933,11 +1111,6 @@ const Projects = () => {
               </div>
               <div className="custom-modal-body">
                 <p style={{ color: "#666" }}>Feb 2025 - Present • Associated with Jabsz Studios</p>
-                <div style={{ background: "#e8f5e8", padding: "10px", borderRadius: "8px", marginBottom: "15px", border: "1px solid #4caf50" }}>
-                  <p style={{ color: "#2e7d32", fontWeight: "bold", margin: "0" }}>
-                    🎉 Successfully launched Version 1.0 on Google Play Store! Currently leading development to Version 2.0
-                  </p>
-                </div>
                 <p>
                   Developed a comprehensive educational mobile application designed to make learning engaging and interactive for users of all ages.
                   Knowledge Bubble transforms complex topics into digestible, gamified learning experiences across multiple subject areas.
@@ -1176,117 +1349,397 @@ const Projects = () => {
           </div>
         )}
 
-        <div className="row" id="projects-list">
-          <div className="col-md-5">
-            <div className="card rounded shadow-sm">
-              <div className="card-image">
-                <span className="badge project-type">Mobile App</span>
-                <img src="farmer-assistant.png" alt="Farmer Assistant App" className="img-fluid" />
+        <div className="row g-4 justify-content-center px-3" id="projects-list">
+          {/* Farmer Assistant Card */}
+          <div className="col-lg-4 col-md-6">
+            <div className="card h-100 border-0" style={{
+              borderRadius: "25px",
+              overflow: "hidden",
+              transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+              background: "linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)",
+              boxShadow: "0 10px 40px rgba(0,0,0,0.08)"
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-12px) scale(1.02)";
+              e.currentTarget.style.boxShadow = "0 25px 50px rgba(102, 126, 234, 0.25)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0) scale(1)";
+              e.currentTarget.style.boxShadow = "0 10px 40px rgba(0,0,0,0.08)";
+            }}>
+              <div className="position-relative" style={{ overflow: "hidden", height: "280px" }}>
+                <div className="position-absolute w-100 h-100" style={{
+                  background: "linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%)",
+                  zIndex: 1
+                }}></div>
+                <span className="badge position-absolute top-0 end-0 m-3" style={{
+                  background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                  color: "white",
+                  padding: "10px 18px",
+                  borderRadius: "25px",
+                  fontSize: "0.75rem",
+                  fontWeight: "700",
+                  zIndex: "10",
+                  letterSpacing: "0.5px",
+                  boxShadow: "0 4px 15px rgba(102, 126, 234, 0.4)"
+                }}>📱 Mobile App</span>
+                <img src="farmer-assistant.png" alt="Farmer Assistant App" className="img-fluid w-100 h-100" style={{
+                  objectFit: "cover",
+                  transition: "transform 0.4s ease"
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.15) rotate(2deg)"}
+                onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1) rotate(0deg)"} />
               </div>
-              <div className="tech-stack text-center mt-3">
-                <span className="badge tech-badge">React Native</span>
-                <span className="badge tech-badge">Expo</span>
-                <span className="badge tech-badge">Firebase</span>
-                <span className="badge tech-badge">Android Development</span>
-              </div>
-              <div className="card-body text-center">
-                <h6 className="text-uppercase">🌾 Farmer Assistant - Mobile App</h6>
-                <p className="small text-muted mb-2">Apr 2025 - Present</p>
-                <p className="small mb-3">A comprehensive mobile application designed to empower farmers with digital tools for agricultural management and decision-making.</p>
-                <div className="d-flex justify-content-center mt-3">
-                  <button
-                    className="btn btn-primary mx-2"
-                    onClick={handleShowFarmerModal}
-                  >
+              <div className="card-body p-4" style={{ background: "white" }}>
+                <div className="mb-3">
+                  <h5 className="fw-bold mb-2" style={{ 
+                    color: "#1a202c",
+                    fontSize: "1.25rem",
+                    letterSpacing: "-0.5px"
+                  }}>🌾 Farmer Assistant</h5>
+                  <p className="text-muted mb-2" style={{ fontSize: "0.8rem", fontWeight: "600" }}>
+                    <span style={{ color: "#667eea" }}>●</span> Apr 2025 - Present
+                  </p>
+                  <p className="text-secondary mb-3" style={{ 
+                    fontSize: "0.9rem", 
+                    lineHeight: "1.7",
+                    color: "#4a5568"
+                  }}>
+                    Empowering farmers with digital tools for agricultural management, QR verification, and market insights.
+                  </p>
+                </div>
+                <div className="d-flex flex-wrap gap-2 mb-4">
+                  {["React Native", "Expo", "Firebase", "Android"].map((tech, i) => (
+                    <span key={i} className="badge" style={{
+                      background: "linear-gradient(135deg, rgba(102, 126, 234, 0.12) 0%, rgba(118, 75, 162, 0.12) 100%)",
+                      color: "#667eea",
+                      padding: "8px 14px",
+                      borderRadius: "15px",
+                      fontSize: "0.7rem",
+                      fontWeight: "600",
+                      border: "1px solid rgba(102, 126, 234, 0.25)",
+                      letterSpacing: "0.3px"
+                    }}>{tech}</span>
+                  ))}
+                </div>
+                <div className="d-flex gap-2">
+                  <button className="btn flex-fill" onClick={handleShowFarmerModal} style={{
+                    background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                    color: "white",
+                    border: "none",
+                    borderRadius: "12px",
+                    padding: "12px",
+                    fontWeight: "700",
+                    fontSize: "0.85rem",
+                    transition: "all 0.3s ease",
+                    boxShadow: "0 4px 15px rgba(102, 126, 234, 0.3)"
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                    e.currentTarget.style.boxShadow = "0 8px 25px rgba(102, 126, 234, 0.4)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "translateY(0)";
+                    e.currentTarget.style.boxShadow = "0 4px 15px rgba(102, 126, 234, 0.3)";
+                  }}>
                     <FaInfoCircle className="me-1" /> Details
                   </button>
-                  <a
-                    className="btn btn-secondary mx-2"
-                    href="https://farmer-assistant-web-black.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaExternalLinkAlt className="me-1" /> View Live
+                  <a className="btn flex-fill" href="https://farmer-assistant-web-black.vercel.app/" target="_blank" rel="noopener noreferrer" style={{
+                    background: "white",
+                    color: "#667eea",
+                    border: "2px solid #667eea",
+                    borderRadius: "12px",
+                    padding: "12px",
+                    fontWeight: "700",
+                    fontSize: "0.85rem",
+                    transition: "all 0.3s ease",
+                    textDecoration: "none"
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = "#667eea";
+                    e.currentTarget.style.color = "white";
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = "white";
+                    e.currentTarget.style.color = "#667eea";
+                    e.currentTarget.style.transform = "translateY(0)";
+                  }}>
+                    <FaExternalLinkAlt className="me-1" /> Live
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-
-
-          <div className="col-md-5">
-            <div className="card rounded shadow-sm">
-              <div className="card-image">
-                <span className="badge project-type">MERN Stack</span>
-                <img src="E-commerce.jpeg" alt="E-commerce application" className="img-fluid" />
+          {/* E-commerce Card */}
+          <div className="col-lg-4 col-md-6">
+            <div className="card h-100 border-0" style={{
+              borderRadius: "25px",
+              overflow: "hidden",
+              transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+              background: "linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)",
+              boxShadow: "0 10px 40px rgba(0,0,0,0.08)"
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-12px) scale(1.02)";
+              e.currentTarget.style.boxShadow = "0 25px 50px rgba(245, 87, 108, 0.25)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0) scale(1)";
+              e.currentTarget.style.boxShadow = "0 10px 40px rgba(0,0,0,0.08)";
+            }}>
+              <div className="position-relative" style={{ overflow: "hidden", height: "280px" }}>
+                <div className="position-absolute w-100 h-100" style={{
+                  background: "linear-gradient(135deg, rgba(240, 147, 251, 0.05) 0%, rgba(245, 87, 108, 0.05) 100%)",
+                  zIndex: 1
+                }}></div>
+                <span className="badge position-absolute top-0 end-0 m-3" style={{
+                  background: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+                  color: "white",
+                  padding: "10px 18px",
+                  borderRadius: "25px",
+                  fontSize: "0.75rem",
+                  fontWeight: "700",
+                  zIndex: "10",
+                  letterSpacing: "0.5px",
+                  boxShadow: "0 4px 15px rgba(245, 87, 108, 0.4)"
+                }}>🛒 MERN Stack</span>
+                <img src="E-commerce.jpeg" alt="E-commerce application" className="img-fluid w-100 h-100" style={{
+                  objectFit: "cover",
+                  transition: "transform 0.4s ease"
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.15) rotate(-2deg)"}
+                onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1) rotate(0deg)"} />
               </div>
-              <div className="tech-stack text-center mt-3">
-                <span className="badge tech-badge">MongoDB</span>
-                <span className="badge tech-badge">Express</span>
-                <span className="badge tech-badge">React</span>
-                <span className="badge tech-badge">Node</span>
-              </div>
-              <div className="card-body text-center">
-                <h6 className="text-uppercase">🛒 E-commerce Application</h6>
-                <p className="small text-muted mb-2">Jan 2025 - Mar 2025</p>
-                <p className="small mb-3">A full-featured e-commerce platform with product search, shopping cart, and secure payment processing.</p>
-                <div className="d-flex justify-content-center mt-3">
-                  <button
-                    className="btn btn-primary mx-2"
-                    onClick={handleShowEcommerceModal}
-                  >
+              <div className="card-body p-4" style={{ background: "white" }}>
+                <div className="mb-3">
+                  <h5 className="fw-bold mb-2" style={{ 
+                    color: "#1a202c",
+                    fontSize: "1.25rem",
+                    letterSpacing: "-0.5px"
+                  }}>🛍️ E-commerce Platform</h5>
+                  <p className="text-muted mb-2" style={{ fontSize: "0.8rem", fontWeight: "600" }}>
+                    <span style={{ color: "#f5576c" }}>●</span> Jan 2025 - Mar 2025
+                  </p>
+                  <p className="text-secondary mb-3" style={{ 
+                    fontSize: "0.9rem", 
+                    lineHeight: "1.7",
+                    color: "#4a5568"
+                  }}>
+                    Full-featured e-commerce platform with secure payments, cart system, and admin dashboard.
+                  </p>
+                </div>
+                <div className="d-flex flex-wrap gap-2 mb-4">
+                  {["MongoDB", "Express", "React", "Node"].map((tech, i) => (
+                    <span key={i} className="badge" style={{
+                      background: "linear-gradient(135deg, rgba(240, 147, 251, 0.12) 0%, rgba(245, 87, 108, 0.12) 100%)",
+                      color: "#f5576c",
+                      padding: "8px 14px",
+                      borderRadius: "15px",
+                      fontSize: "0.7rem",
+                      fontWeight: "600",
+                      border: "1px solid rgba(245, 87, 108, 0.25)",
+                      letterSpacing: "0.3px"
+                    }}>{tech}</span>
+                  ))}
+                </div>
+                <div className="d-flex gap-2">
+                  <button className="btn flex-fill" onClick={handleShowEcommerceModal} style={{
+                    background: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+                    color: "white",
+                    border: "none",
+                    borderRadius: "12px",
+                    padding: "12px",
+                    fontWeight: "700",
+                    fontSize: "0.85rem",
+                    transition: "all 0.3s ease",
+                    boxShadow: "0 4px 15px rgba(245, 87, 108, 0.3)"
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                    e.currentTarget.style.boxShadow = "0 8px 25px rgba(245, 87, 108, 0.4)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "translateY(0)";
+                    e.currentTarget.style.boxShadow = "0 4px 15px rgba(245, 87, 108, 0.3)";
+                  }}>
                     <FaInfoCircle className="me-1" /> Details
                   </button>
-                  <a
-                    className="btn btn-secondary mx-2"
-                    href="https://ecommerce-app-frontend-44e8.onrender.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaExternalLinkAlt className="me-1" /> View Live
+                  <a className="btn flex-fill" href="https://ecommerce-app-frontend-44e8.onrender.com/" target="_blank" rel="noopener noreferrer" style={{
+                    background: "white",
+                    color: "#f5576c",
+                    border: "2px solid #f5576c",
+                    borderRadius: "12px",
+                    padding: "12px",
+                    fontWeight: "700",
+                    fontSize: "0.85rem",
+                    transition: "all 0.3s ease",
+                    textDecoration: "none"
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = "#f5576c";
+                    e.currentTarget.style.color = "white";
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = "white";
+                    e.currentTarget.style.color = "#f5576c";
+                    e.currentTarget.style.transform = "translateY(0)";
+                  }}>
+                    <FaExternalLinkAlt className="me-1" /> Live
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-md-5">
-            <div className="card rounded shadow-sm">
-              <div className="card-image">
-                <span className="badge project-type">Full Stack</span>
-                <img src="E-alumni.png" alt="E-alumni project" className="img-fluid" />
+
+          {/* E-Alumni Card */}
+          <div className="col-lg-4 col-md-6">
+            <div className="card h-100 border-0" style={{
+              borderRadius: "25px",
+              overflow: "hidden",
+              transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+              background: "linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)",
+              boxShadow: "0 10px 40px rgba(0,0,0,0.08)"
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-12px) scale(1.02)";
+              e.currentTarget.style.boxShadow = "0 25px 50px rgba(0, 242, 254, 0.25)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0) scale(1)";
+              e.currentTarget.style.boxShadow = "0 10px 40px rgba(0,0,0,0.08)";
+            }}>
+              <div className="position-relative" style={{ overflow: "hidden", height: "280px" }}>
+                <div className="position-absolute w-100 h-100" style={{
+                  background: "linear-gradient(135deg, rgba(79, 172, 254, 0.05) 0%, rgba(0, 242, 254, 0.05) 100%)",
+                  zIndex: 1
+                }}></div>
+                <span className="badge position-absolute top-0 end-0 m-3" style={{
+                  background: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+                  color: "white",
+                  padding: "10px 18px",
+                  borderRadius: "25px",
+                  fontSize: "0.75rem",
+                  fontWeight: "700",
+                  zIndex: "10",
+                  letterSpacing: "0.5px",
+                  boxShadow: "0 4px 15px rgba(0, 242, 254, 0.4)"
+                }}>🎓 Full Stack</span>
+                <img src="E-alumni.png" alt="E-alumni project" className="img-fluid w-100 h-100" style={{
+                  objectFit: "cover",
+                  transition: "transform 0.4s ease"
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.15) rotate(2deg)"}
+                onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1) rotate(0deg)"} />
               </div>
-              <div className="tech-stack text-center mt-3">
-                <span className="badge tech-badge">Node</span>
-                <span className="badge tech-badge">Express</span>
-                <span className="badge tech-badge">EJS</span>
-                <span className="badge tech-badge">MongoDB</span>
-              </div>
-              <div className="card-body text-center">
-                <h6 className="text-uppercase">🎓 E-Alumni: Alumni Management Platform</h6>
-                <p className="small text-muted mb-2">Dec 2024 - Feb 2025</p>
-                <p className="small mb-3">A comprehensive platform connecting alumni with their alma mater and fellow graduates.</p>
-                <div className="d-flex justify-content-center mt-3">
-                  <button
-                    className="btn btn-primary mx-2"
-                    onClick={handleShowEAlumniModal}
-                  >
+              <div className="card-body p-4" style={{ background: "white" }}>
+                <div className="mb-3">
+                  <h5 className="fw-bold mb-2" style={{ 
+                    color: "#1a202c",
+                    fontSize: "1.25rem",
+                    letterSpacing: "-0.5px"
+                  }}>🎓 E-Alumni Platform</h5>
+                  <p className="text-muted mb-2" style={{ fontSize: "0.8rem", fontWeight: "600" }}>
+                    <span style={{ color: "#00f2fe" }}>●</span> Dec 2024 - Feb 2025
+                  </p>
+                  <p className="text-secondary mb-3" style={{ 
+                    fontSize: "0.9rem", 
+                    lineHeight: "1.7",
+                    color: "#4a5568"
+                  }}>
+                    Comprehensive platform connecting alumni with their alma mater and fellow graduates.
+                  </p>
+                </div>
+                <div className="d-flex flex-wrap gap-2 mb-4">
+                  {["Node", "Express", "EJS", "MongoDB"].map((tech, i) => (
+                    <span key={i} className="badge" style={{
+                      background: "linear-gradient(135deg, rgba(79, 172, 254, 0.12) 0%, rgba(0, 242, 254, 0.12) 100%)",
+                      color: "#00f2fe",
+                      padding: "8px 14px",
+                      borderRadius: "15px",
+                      fontSize: "0.7rem",
+                      fontWeight: "600",
+                      border: "1px solid rgba(0, 242, 254, 0.25)",
+                      letterSpacing: "0.3px"
+                    }}>{tech}</span>
+                  ))}
+                </div>
+                <div className="d-flex gap-2">
+                  <button className="btn" onClick={handleShowEAlumniModal} style={{
+                    background: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+                    color: "white",
+                    border: "none",
+                    borderRadius: "12px",
+                    padding: "12px 16px",
+                    fontWeight: "700",
+                    fontSize: "0.85rem",
+                    transition: "all 0.3s ease",
+                    flex: "1",
+                    boxShadow: "0 4px 15px rgba(0, 242, 254, 0.3)"
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                    e.currentTarget.style.boxShadow = "0 8px 25px rgba(0, 242, 254, 0.4)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "translateY(0)";
+                    e.currentTarget.style.boxShadow = "0 4px 15px rgba(0, 242, 254, 0.3)";
+                  }}>
                     <FaInfoCircle className="me-1" /> Details
                   </button>
-                  <a
-                    className="btn btn-secondary mx-2"
-                    href="https://youtu.be/6ZiIxATHFQA?si=TpY9mLB7fQTOobLp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a className="btn" href="https://youtu.be/6ZiIxATHFQA?si=TpY9mLB7fQTOobLp" target="_blank" rel="noopener noreferrer" style={{
+                    background: "white",
+                    color: "#00f2fe",
+                    border: "2px solid #00f2fe",
+                    borderRadius: "12px",
+                    padding: "12px 16px",
+                    fontWeight: "700",
+                    fontSize: "0.85rem",
+                    flex: "1",
+                    transition: "all 0.3s ease",
+                    textDecoration: "none",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = "#00f2fe";
+                    e.currentTarget.style.color = "white";
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = "white";
+                    e.currentTarget.style.color = "#00f2fe";
+                    e.currentTarget.style.transform = "translateY(0)";
+                  }}>
                     <FaExternalLinkAlt className="me-1" /> Demo
                   </a>
-                  <a
-                    className="btn btn-outline-secondary mx-2"
-                    href="https://github.com/Himanshu-vashist/E-Alumni"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a className="btn" href="https://github.com/Himanshu-vashist/E-Alumni" target="_blank" rel="noopener noreferrer" style={{
+                    background: "white",
+                    color: "#2d3748",
+                    border: "2px solid #e2e8f0",
+                    borderRadius: "12px",
+                    padding: "12px 16px",
+                    fontWeight: "700",
+                    fontSize: "0.85rem",
+                    transition: "all 0.3s ease",
+                    textDecoration: "none",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = "#2d3748";
+                    e.currentTarget.style.color = "white";
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = "white";
+                    e.currentTarget.style.color = "#2d3748";
+                    e.currentTarget.style.transform = "translateY(0)";
+                  }}>
                     <FaGithub className="me-1" /> GitHub
                   </a>
                 </div>
@@ -1294,7 +1747,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="col-md-5">
+          <div className="col-md-5" style={{ display: "none" }}>
             <div className="card rounded shadow-sm">
               <div className="card-image">
                 <span className="badge project-type">Full Stack</span>

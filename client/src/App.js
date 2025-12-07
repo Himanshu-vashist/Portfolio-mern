@@ -6,6 +6,7 @@ import Education from "./pages/Educations/Education";
 import Projects from "./pages/Projects/Projects";
 import Techstack from "./pages/Techstack/Techstack";
 import WorkExp from "./pages/workExp/WorkExp";
+import Feedback from "./pages/Feedback/Feedback";
 import ScrollToTop from "react-scroll-to-top";
 import { useTheme } from "./context/ThemeContext";
 import Certificates from "./pages/Certifications/Certifications";
@@ -32,6 +33,7 @@ function App() {
             <Techstack />
             <Certificates />
             <Education />
+            <Feedback />
             <Contact />
           </div>
         </div>
